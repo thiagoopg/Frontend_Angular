@@ -1,0 +1,9 @@
+.container_principal{
+    /*Inicialização padrão*/
+    width: 100%;
+    height: 100%;
+}
+.container_principal>img{
+    width: 100%;
+    height: 100%;
+}

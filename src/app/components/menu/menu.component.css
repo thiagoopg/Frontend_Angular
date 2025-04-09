@@ -1,0 +1,20 @@
+.container_menu_bar {
+    /*Inicialização padrão*/
+    width: 100%;
+    height: 100%;
+    /*Definindo o layout do menu*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+app-opcoes:hover{
+    background-color: gray;
+}
+.titulo{
+    font-size: 2rem;
+}
+.menu_titulo_opcoes{
+    font-size: 1rem;
+}

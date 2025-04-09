@@ -1,0 +1,18 @@
+button { 
+    display: flex;
+    font-size: 1rem;
+    padding: 0.55rem 0.55rem 0.55rem 0;
+    width: 100%;
+    background-color: white;
+    border-style: none;
+    padding-left: 0.5rem;
+}
+button:hover{
+    background-color: rgb(197, 197, 197);
+    border-left: 1px solid;
+}
+img{
+    margin-right: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+}
