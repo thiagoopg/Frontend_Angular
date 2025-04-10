@@ -1,12 +1,5 @@
-<div class="container_coisas">
-    <div class="container_coisas_1">
-        <div style="text-align:center">
-        </div>
-    </div>
-    <div class="container_coisas_2">
-        <p>Gastos totais na semana</p>
-    </div>
-    <div class="container_coisas_3">
-        <p>Gastos totais no mês</p>
-    </div>
+<div  [ngStyle]="{ opacity: pronto ? 1 : 0, transition: 'opacity 0.3s ease-in-out', 'overflow-x': pronto ? 'scroll' : 'none'}" class="container_coisas">
+    <app-chart></app-chart>
+    <app-chart></app-chart>
+    <app-chart></app-chart>
 </div>
