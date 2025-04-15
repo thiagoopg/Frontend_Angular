@@ -38,7 +38,7 @@ export class Conta {
             .filter(transacao => {
                 const data = new Date(transacao.data);
                 const ehUltimoMes =
-                    (data.getFullYear() === anoAtual && data.getMonth() === mesAtual - 1) ||
+                    (data.getFullYear() === anoAtual) ||
                     (mesAtual === 0 && data.getFullYear() === anoAtual - 1 && data.getMonth() === 11);
                 return ehUltimoMes && transacao.tipo === false;
             })

@@ -7,13 +7,13 @@
   <div class="container_grid_infos">
     <div class="container_infos">
       <div class="container_info_1">
-        <app-charts [minhasContas]="Contas" (id)="id = $event"></app-charts>
+        <app-charts [minhasContas]="contas" (id)="id = $event"></app-charts>
       </div>
       <div class="container_info_2">
-        <app-transactions [transacao]="Contas[id].transacoes"></app-transactions>
+        <app-transactions [transacao]="contas[id].transacoes"></app-transactions>
       </div>
       <div class="container_info_3">
-        <app-big-chart [conta]="Contas[id]"></app-big-chart>
+        <app-big-chart [conta]="contas[id]"></app-big-chart>
       </div>
     </div>
   </div>
