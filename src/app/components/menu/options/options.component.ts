@@ -1,4 +1,5 @@
-import { Component, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-options',
@@ -7,6 +8,15 @@ import { Component, input } from '@angular/core';
   styleUrl: './options.component.css'
 })
 export class OptionsComponent {
-  name = input('Default');
-  image = input('https://images.freeimages.com/image/previews/937/geosteer-magnetic-png-5691080.png');
+@Input() name: string = '';
+@Input() image: string = 'circle';
+@Input() ativo: boolean = false;
+
+pegarNome() {
+  return this.name || 'opção';
+}
+pegarImagem(){
+  return this.image;
+}
+
 }
