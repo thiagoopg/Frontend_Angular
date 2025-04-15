@@ -1,12 +1,20 @@
-<div class="container_coisas">
-    <div class="container_coisas_1">
-        <div style="text-align:center">
-        </div>
-    </div>
-    <div class="container_coisas_2">
-        <p>Gastos totais na semana</p>
-    </div>
-    <div class="container_coisas_3">
-        <p>Gastos totais no mês</p>
-    </div>
+<div class="card-container">
+  <div class="account-card" *ngFor="let conta of minhasContas">
+    <button (click)="idButton(conta.id)">
+      <div class="card-header">
+        <h2>{{conta.nomeConta}}</h2>
+        <div class="card-icon">💳</div>
+      </div>
+
+      <div class="card-balance">
+        <p class="label">Saldo atual</p>
+        <p class="value saldo">R$ {{conta.saldoConta}}</p>
+      </div>
+
+      <div class="card-expense">
+        <p class="label">Gastos do mês</p>
+        <p class="value gasto">R$ {{conta.gastosUltimoMes}}</p>
+      </div>
+    </button>
+  </div>
 </div>

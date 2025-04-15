@@ -1,6 +1,9 @@
 .container_principal{
-    padding: 1rem;
+    padding: 2rem;
     /*Inicialização padrão*/
     width: 100%;
     height: 100%;
+}
+*{
+    padding-bottom: 1rem;
 }

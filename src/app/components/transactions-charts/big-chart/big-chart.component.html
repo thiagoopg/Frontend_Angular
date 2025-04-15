@@ -1,4 +1,6 @@
 <div class="container_principal">
-    <img src="https://www.infomoney.com.br/whatsapp_image_2018-11-26_at_12-1/?1543242130466">
-</div>
+  <highcharts-chart [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="chartOptions"
+    [(update)]="updateFlag" [oneToOne]="oneToOneFlag" [runOutsideAngular]="runOutsideAngular"></highcharts-chart>
+  <button class="botao-sobreposto" (click)="trocarValor()">Trocar tipo</button>
 
+</div>

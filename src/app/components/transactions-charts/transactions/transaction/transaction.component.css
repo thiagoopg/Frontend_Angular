@@ -20,6 +20,9 @@
 .transacao>p{
     font-size: 0.6rem;
 }
+a{
+    padding-bottom: 0.5rem;
+}
 p{
     color: darkgray;
     font-size: 1rem;

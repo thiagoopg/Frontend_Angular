@@ -9,5 +9,5 @@ import {Transacao} from '../../../../models/transacao.model';
   styleUrl: './transaction.component.css'
 })
 export class TransactionComponent {
-  @Input() transacoes: Transacao[] = [];
+  @Input() transacoes!: Transacao[];
 }
