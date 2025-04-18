@@ -1,23 +1,17 @@
-<div class="container_menu_bar">
-    <div class="header">
-        <h1 class="titulo">Financeiro</h1>
-    </div>
-    <div class="body">
-        <div class="container_menu_general">
-            <h1 class="menu_titulo_options">Geral</h1>
-            <app-options [name]="'Geral'" [image]="'assets/casa.png'"></app-options>
-            <app-options [name]="'Coisas'"></app-options>
-            <app-options></app-options>
-            <app-options></app-options>
-        </div>
-        <div class="container_menu_personal">
-            <h1 class="menu_titulo_options">Outros</h1>
-            <app-options></app-options>
-            <app-options></app-options>
-        </div>
-    </div>
+<div class="menu-bar">
+    <header class="menu-header">
+        <h1 class="menu-title">Financeiro</h1>
+    </header>
 
-    <div class="footer">
-        <h2>Log out</h2>
-    </div>
+    <nav class="menu-body">
+        <div class="menu-section">
+            <h2 class="menu-section-title">Geral</h2>
+            <app-options [name]="'Contas'" [icon]="'chart-pie'"></app-options>
+            <app-options [name]="'Home'" [icon]="'Home'"></app-options>
+        </div>
+    </nav>
+
+    <footer class="menu-footer">
+        <span class="logout">Log out</span>
+    </footer>
 </div>

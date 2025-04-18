@@ -37,7 +37,7 @@ export class AppComponent {
       { nome: "Netflix", preco: 40, tipo: false, data: new Date("2025-04-05") },
       { nome: "viagem", preco: 800, tipo: false, data: new Date("2025-04-07") },
       { nome: "da grabryela", preco: 100, tipo: true, data: new Date("2025-04-08") },
-      { nome: "barzinho", preco: 120, tipo: false, data: new Date("2025-04-09") },
+      { nome: "Gasolina", preco: 120, tipo: false, data: new Date("2025-04-09") },
       { nome: "bônus empresa", preco: 250, tipo: true, data: new Date("2025-04-10") },
       { nome: "presente de aniversário", preco: 200, tipo: true, data: new Date("2025-04-12") }
     ]),

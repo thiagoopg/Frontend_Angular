@@ -1,5 +1,5 @@
 <a class="transacao" *ngFor="let transacao of transacoes">
     <img [src]="transacao.tipo ? '../../../../../assets/setaverde.png' : '../../../../../assets/setavermelha.png'"/>
     <p class="start">{{ transacao.nome }}<br> {{ transacao.data | date:'dd/MM/yyyy' }}</p>
-    <p class="end">{{ transacao.preco | currency:'BRL' }}<br>{{transacao.tipo}}</p>
+    <p class="end">{{ transacao.preco | currency:'BRL' }}</p>
 </a>

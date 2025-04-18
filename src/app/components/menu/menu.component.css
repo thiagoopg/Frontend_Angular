@@ -1,101 +1,104 @@
-.container_menu_bar {
-    width: 240px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem 1rem;
-    border-right: 1px solid #e0e0e0;
-    background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
-  }
-  
-  .header .titulo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .container_menu_section {
-    margin-bottom: 2rem;
-  }
-  
-  .menu_titulo_opcoes {
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #95a5a6;
-    text-transform: uppercase;
-    margin: 1.5rem 0 0.5rem 0.5rem;
-    letter-spacing: 1px;
-  }
-  
-  app-options {
-    display: block;
-    margin: 0.25rem 0;
-  }
-  
-  /* Botão refinado */
-  button {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    padding: 0.6rem 0.8rem;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-radius: 12px;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
-    color: #2c3e50;
-    font-weight: 500;
-  }
-  
-  button:hover {
-    background-color: #f0f3f7;
-  }
-  
-  button.active {
-    background-color: #d6e4ff;
-    font-weight: 700;
-    color: #1a73e8;
-  }
-  
-  button img {
-    background: #ecf0f1;
-    padding: 0.4rem;
-    border-radius: 50%;
-    margin-right: 0.7rem;
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-  }
-  
-  button:hover img {
-    transform: scale(1.1);
-  }
-  
-  button p {
-    margin: 0;
-  }
-  
-  /* Rodapé */
-  .footer {
-    text-align: center;
-    padding-top: 2rem;
-  }
-  
-  .logout {
-    font-size: 1rem;
-    color: #e74c3c;
-    font-weight: 600;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .logout:hover {
-    color: #c0392b;
-  }
-  
+.menu-bar {
+  width: 220px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1.2rem;
+  background-color: #fdfdfd;
+  border-right: 1px solid #e6e6e6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.menu-header .menu-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.menu-body {
+  flex-grow: 1;
+}
+
+.menu-section {
+  margin-bottom: 2rem;
+}
+
+.menu-section-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  margin: 1.5rem 0 0.5rem 0.5rem;
+  letter-spacing: 1px;
+}
+
+app-options {
+  display: block;
+  margin: 0.35rem 0;
+}
+
+/* Botão refinado */
+button {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  color: #34495e;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #ecf0f1;
+}
+
+button.active {
+  background-color: #d6e4ff;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+button img {
+  background: #ecf0f1;
+  padding: 0.4rem;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+button:hover img {
+  transform: scale(1.1);
+}
+
+button p {
+  margin: 0;
+}
+
+/* Rodapé */
+.menu-footer {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.logout {
+  font-size: 1rem;
+  color: #e74c3c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logout:hover {
+  color: #c0392b;
+}
