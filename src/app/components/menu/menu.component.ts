@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { OptionsComponent } from "./options/options.component";
-
-import { LucideAngularModule, ChartPie } from 'lucide-angular';
+import { LucideAngularModule } from 'lucide-angular';
+import { ContaService } from '../../services/conta.service';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -9,11 +10,12 @@ import { LucideAngularModule, ChartPie } from 'lucide-angular';
   standalone:true,
   imports: [
     OptionsComponent,
-    LucideAngularModule
+    LucideAngularModule,
+    CommonModule
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
-export class MenuComponent {
-
+export class MenuComponent{
+  constructor(public service:ContaService){}
 }
